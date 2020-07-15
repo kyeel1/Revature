@@ -5,7 +5,7 @@ namespace Calculator
 
     class Program
     {
-            static double newInput()//gets inputs from the user and then passes it to math to calculate the result
+            static double newInput()//gets both inputs from the user and then passes it to math to calculate the result
             {
              double number1;
              double number2;
@@ -19,7 +19,7 @@ namespace Calculator
 
              return math(operation,number1,number2);//returns the result of the operation
             }
-            static double continueInput(double number1)//gets inputs from the user and then passes it to math to calculate the result
+            static double continueInput(double number1)//gets one input from the user and then takes the result of the previous calculation to the first number
             {
              double number2;
 
@@ -31,7 +31,7 @@ namespace Calculator
              return math(operation,number1,number2);//returns the result of the operation
             }
 
-            static double math(string operation,double number1,double number2)//calculates 
+            static double math(string operation,double number1,double number2)//calculates based on user prompt(the string operation)
             {
                 switch(operation)
                 {
@@ -61,32 +61,37 @@ namespace Calculator
              string status = Console.ReadLine();
              switch(status)
              {
-                case "end":
+                default ://this will clear the cache and start the user from scratch
                  return 0;
-                case "continue":
+                case "continue"://this will make the first number the result of the last calculation
                  return 1;
-                default :
+                case "end"://this ends the program
                  return 2;
+                
+                
              }
             }
         static void Main(string[] args)
         {
-            int flag= 2;
+            int flag= 0;//the default is 2 because of how check 
             double result = 0;
             
-            while(flag!=0){
-             double result2;
-             if(flag == 2){
+            while(flag!=2){//loops until the user types end at the prompt at the end
+
+             double result2;//this stores the result we print to the user
+
+             if(flag == 0){
               result = newInput();
               result2 = result;
              }
-             else{
+             else{//will go through this statement if the user entered continue at the prompt
               result2 = continueInput(result);
               }
-              Console.WriteLine($"Your result is: {result2}");
+
+              Console.WriteLine($"Your result is: {result2}");//prints out the result of the calculation
 
               Console.WriteLine("type end to end , type continue to continue with previous result or press enter to try again");
-              flag = check();
+              flag = check();//checks to see what action the user wants to take and alters the flag accordingly
               
             }
         }
