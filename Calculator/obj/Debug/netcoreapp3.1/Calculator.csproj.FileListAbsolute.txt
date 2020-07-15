@@ -1,0 +1,13 @@
+/home/henry/Documents/Revature/Week_1/Calculator/obj/Debug/netcoreapp3.1/Calculator.csprojAssemblyReference.cache
+/home/henry/Documents/Revature/Week_1/Calculator/obj/Debug/netcoreapp3.1/Calculator.AssemblyInfoInputs.cache
+/home/henry/Documents/Revature/Week_1/Calculator/obj/Debug/netcoreapp3.1/Calculator.AssemblyInfo.cs
+/home/henry/Documents/Revature/Week_1/Calculator/obj/Debug/netcoreapp3.1/Calculator.csproj.CoreCompileInputs.cache
+/home/henry/Documents/Revature/Week_1/Calculator/bin/Debug/netcoreapp3.1/Calculator
+/home/henry/Documents/Revature/Week_1/Calculator/bin/Debug/netcoreapp3.1/Calculator.deps.json
+/home/henry/Documents/Revature/Week_1/Calculator/bin/Debug/netcoreapp3.1/Calculator.runtimeconfig.json
+/home/henry/Documents/Revature/Week_1/Calculator/bin/Debug/netcoreapp3.1/Calculator.runtimeconfig.dev.json
+/home/henry/Documents/Revature/Week_1/Calculator/bin/Debug/netcoreapp3.1/Calculator.dll
+/home/henry/Documents/Revature/Week_1/Calculator/bin/Debug/netcoreapp3.1/Calculator.pdb
+/home/henry/Documents/Revature/Week_1/Calculator/obj/Debug/netcoreapp3.1/Calculator.dll
+/home/henry/Documents/Revature/Week_1/Calculator/obj/Debug/netcoreapp3.1/Calculator.pdb
+/home/henry/Documents/Revature/Week_1/Calculator/obj/Debug/netcoreapp3.1/Calculator.genruntimeconfig.cache

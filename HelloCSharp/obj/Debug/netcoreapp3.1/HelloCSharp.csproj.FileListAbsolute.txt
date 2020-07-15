@@ -1,0 +1,13 @@
+/home/henry/Documents/Revature/Week_1/HelloCSharp/bin/Debug/netcoreapp3.1/HelloCSharp
+/home/henry/Documents/Revature/Week_1/HelloCSharp/bin/Debug/netcoreapp3.1/HelloCSharp.deps.json
+/home/henry/Documents/Revature/Week_1/HelloCSharp/bin/Debug/netcoreapp3.1/HelloCSharp.runtimeconfig.json
+/home/henry/Documents/Revature/Week_1/HelloCSharp/bin/Debug/netcoreapp3.1/HelloCSharp.runtimeconfig.dev.json
+/home/henry/Documents/Revature/Week_1/HelloCSharp/bin/Debug/netcoreapp3.1/HelloCSharp.dll
+/home/henry/Documents/Revature/Week_1/HelloCSharp/bin/Debug/netcoreapp3.1/HelloCSharp.pdb
+/home/henry/Documents/Revature/Week_1/HelloCSharp/obj/Debug/netcoreapp3.1/HelloCSharp.csprojAssemblyReference.cache
+/home/henry/Documents/Revature/Week_1/HelloCSharp/obj/Debug/netcoreapp3.1/HelloCSharp.AssemblyInfoInputs.cache
+/home/henry/Documents/Revature/Week_1/HelloCSharp/obj/Debug/netcoreapp3.1/HelloCSharp.AssemblyInfo.cs
+/home/henry/Documents/Revature/Week_1/HelloCSharp/obj/Debug/netcoreapp3.1/HelloCSharp.csproj.CoreCompileInputs.cache
+/home/henry/Documents/Revature/Week_1/HelloCSharp/obj/Debug/netcoreapp3.1/HelloCSharp.dll
+/home/henry/Documents/Revature/Week_1/HelloCSharp/obj/Debug/netcoreapp3.1/HelloCSharp.pdb
+/home/henry/Documents/Revature/Week_1/HelloCSharp/obj/Debug/netcoreapp3.1/HelloCSharp.genruntimeconfig.cache
