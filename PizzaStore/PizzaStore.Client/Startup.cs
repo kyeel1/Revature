@@ -4,13 +4,12 @@ namespace PizzaStore.Client
 {
  public class Startup
  {
-  public Pizza CreatePizza(string size,string crust,List<string> toppings)
+  public Order CreateOrder(User user,Store store)
   {
-   var pizza = new Pizza();
-   pizza.size = size;
-   pizza.crust = crust;
-   pizza.toppings = toppings;
-   return pizza;
+      var order = new Order();
+      user.orders.Add(order);
+      store.orders.Add(order);
+      return order;
 
   }
  }

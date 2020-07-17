@@ -7,8 +7,10 @@ namespace PizzaStore.Client
     {
         static void Main(string[] args)
         {
-            Pizza[] cart = new Pizza[3];
-            int index = 0;
+            var user1 = new User();
+            var store1 = new Store();
+            var Startup = new Startup();
+            Order cart = Startup.CreateOrder(user1,store1);
             bool flag = true;
             while(flag){
                 flag = newInput();
@@ -19,33 +21,36 @@ namespace PizzaStore.Client
              Console.WriteLine("type peperoni if you want peperoni");
              Console.WriteLine("type sausage if you want suasage");
              Console.WriteLine("type custom if you want a custom pizza");
+             Console.WriteLine("type cart to display the cart");
+             
              Console.WriteLine("press enter if you want to exit");
              var temp = new PizzaStore.Client.Startup();
-             var tempPizza = new Pizza();
+             Pizza tempPizza;
                 switch(Console.ReadLine())
                 {
                  case "cheese":
-                 tempPizza = temp.CreatePizza("L","thick",new List<string>{"cheese"});
-                 cart[index] = tempPizza;
-                 index += 1;
+                 tempPizza = new Pizza("L","thick",new List<string>{"cheese"});
+                 cart.pizzas.Add(tempPizza);
                  break;
 
                  case "pepperoni" :
-                 tempPizza = temp.CreatePizza("L","thick",new List<string>{"cheese"});
-                 cart[index] = tempPizza;
-                 index += 1;
+                 tempPizza = new Pizza("L","thick",new List<string>{"cheese"});
+                 cart.pizzas.Add(tempPizza);
                  break;
 
                  case "suasage": 
-                 tempPizza = temp.CreatePizza("L","thick",new List<string>{"cheese"});
-                 cart[index] = tempPizza;
-                 index += 1;
+                 tempPizza = new Pizza("L","thick",new List<string>{"cheese"});
+                 cart.pizzas.Add(tempPizza);
                  break;
 
                  case "custom" :
-                 tempPizza = temp.CreatePizza("L","thick",custom());
-                 cart[index] = tempPizza;
-                 index += 1;
+                 tempPizza = new Pizza("L","thick",custom());
+                 cart.pizzas.Add(tempPizza);
+                 break;
+                 case "cart":
+                 foreach(Pizza x in cart.pizzas){
+                     Console.WriteLine($"{x.ToString()}");
+                 }
                  break;
 
                  default:
@@ -64,6 +69,7 @@ namespace PizzaStore.Client
                 Console.WriteLine("type peperoni if you want peperoni");
                 Console.WriteLine("type sausage if you want suasage");
                 Console.WriteLine("press enter if you want to exit");
+
                 switch(Console.ReadLine())
                 {
                  case "cheese":

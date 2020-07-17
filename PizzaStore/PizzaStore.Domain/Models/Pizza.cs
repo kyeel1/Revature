@@ -3,14 +3,20 @@ namespace PizzaStore.Domain
 {
  public class Pizza
  {
-  public string size = "";
-  public string crust = "";
-  public List<string> toppings = new List<string>();
- 
+  public string Size = "";
+  public string Crust = "";
+  public List<string> Toppings = new List<string>();
+
+ public Pizza(string crust,string size, List<string> toppings){
+   Crust = crust;
+   Size = size;
+   Toppings = toppings;
+
+ }
  public override string ToString()
  {
-  string result = $"size:{size} crust:{crust} toppings:";
-  foreach(string x in toppings)
+  string result = $"size:{Size} crust:{Crust} toppings:";
+  foreach(string x in Toppings)
   {
    result+= $"{x} ";
   }
