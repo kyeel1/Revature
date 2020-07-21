@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using PizzaStore.Domain;
 namespace PizzaStore.Client
 {
- public class Startup
+ public class Starter
  {
   public Order CreateOrder(User user,Store store)
   {

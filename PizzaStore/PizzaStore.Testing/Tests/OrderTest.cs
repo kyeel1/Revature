@@ -15,7 +15,7 @@ namespace PizzaStore.Testing
         string crust = "thick";
         List<string> toppings = new List<string>();
         //When
-        sut.createPizza(size,crust,toppings);
+        sut.createPizza(size,crust,toppings,12.00);
         //Then
         Assert.True(sut.pizzas.Count == 1);
         }

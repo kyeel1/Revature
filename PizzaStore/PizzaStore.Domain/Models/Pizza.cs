@@ -3,14 +3,16 @@ namespace PizzaStore.Domain
 {
  public class Pizza
  {
-  public string Size = "";
-  public string Crust = "";
+  public string Size {get; }
+  public string Crust {get; }
   public List<string> Toppings = new List<string>();
 
- public Pizza(string crust,string size, List<string> toppings){
+  public double Cost {get; }
+ public Pizza(string crust,string size, List<string> toppings, double cost){
    Crust = crust;
    Size = size;
    Toppings = toppings;
+   Cost = cost;
 
  }
  public override string ToString()
@@ -20,7 +22,12 @@ namespace PizzaStore.Domain
   {
    result+= $"{x} ";
   }
+  result += $"cost: {Cost}";
   return result;
+}
+public Pizza()
+{
+
 }
 }
 }

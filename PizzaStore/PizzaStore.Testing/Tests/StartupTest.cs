@@ -11,7 +11,7 @@ namespace PizzaStore.Testing
         public void TestCreateOrder()
         {
         //Given
-        var user = new User();
+        var user = new User("bob");
         var store = new Store();
         var sut = new Starter();
         //When
